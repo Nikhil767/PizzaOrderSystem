@@ -1,0 +1,13 @@
+ /* card grid with flex & card */
+ .content {
+    padding: 16px;
+  }
+  
+  .content > mat-card {
+    width: 200px;
+  }
+
+  .pizaa-image-layout{
+    height: 250px;
+    width: 250px;
+  }

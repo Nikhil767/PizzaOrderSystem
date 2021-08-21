@@ -1,0 +1,42 @@
+{
+    "Message": "toppingtype configuration loaded successfully",
+    "Data": [
+        {
+            "Id": 1,
+            "Name": "Marinara",
+            "Prize": 0,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/toppingtype/marinara.jpg",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 2,
+            "Name": "Pepperoni",
+            "Prize": 75,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/toppingtype/peproni.jpg",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 3,
+            "Name": "Mushrooms",
+            "Prize": 80,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/toppingtype/mushroom.jpg",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 4,
+            "Name": "Onions",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/toppingtype/onion.jpg",
+            "PrizeUnit": "Ruppes"
+        }
+    ],
+    "Success": true
+}

@@ -1,0 +1,15 @@
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\bin\Debug\net5.0\Service Interfaces.deps.json
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\bin\Debug\net5.0\Service Interfaces.dll
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\bin\Debug\net5.0\ref\Service Interfaces.dll
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\bin\Debug\net5.0\Service Interfaces.pdb
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\bin\Debug\net5.0\Domain.dll
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\bin\Debug\net5.0\Domain.pdb
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.AssemblyInfo.cs
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.csproj.CopyComplete
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.dll
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\ref\Service Interfaces.dll
+C:\Users\Dell\source\repos\PizaaOrderSystem\PizzaAppApi\Service Interfaces\obj\Debug\net5.0\Service Interfaces.pdb

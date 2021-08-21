@@ -1,0 +1,33 @@
+{
+    "Message": "sizetype configuration loaded successfully",
+    "Data": [
+        {
+            "Id": 1,
+            "Name": "Small",
+            "Prize": 150,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/sizetype/sm-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 2,
+            "Name": "Medium",
+            "Prize": 200,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/sizetype/m-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 3,
+            "Name": "Large",
+            "Prize": 250,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/sizetype/lg-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        }
+    ],
+    "Success": true
+}

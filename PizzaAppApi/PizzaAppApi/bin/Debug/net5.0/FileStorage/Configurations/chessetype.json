@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "NoChesse",
+    "prize": 0.0,
+    "quantity": 1,
+    "isActive": true,
+    "imagePath": "../../assets/chessetype/no-chesse.jfif",
+    "prizeUnit": "Ruppes"
+  },
+  {
+    "id": 2,
+    "name": "Chesse",
+    "prize": 50.0,
+    "quantity": 1,
+    "isActive": true,
+    "imagePath": "../../assets/chessetype/chesse.jfif",
+    "prizeUnit": "Ruppes"
+  },
+  {
+    "id": 3,
+    "name": "ExtraChesse",
+    "prize": 750.0,
+    "quantity": 1,
+    "isActive": true,
+    "imagePath": "../../assets/chessetype/extra-chesse.jfif",
+    "prizeUnit": "Ruppes"
+  }
+]

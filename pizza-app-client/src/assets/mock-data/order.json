@@ -1,0 +1,39 @@
+{
+    "email": "nikhildeshmukh76@gmail.com",
+    "order": {
+      "orderID": null,
+      "totalPrize": 100,
+      "prizeUnit": "Ruppes",
+      "orderItems": [
+        {
+          "items": [
+            {
+              "id": 10,
+              "name": "Chesse Pizza",
+              "prize": 100,
+              "quantity": 1,
+              "isActive": true,
+              "imagePath": null,
+              "prizeUnit": "Ruppes",
+              "isDrink": false,
+              "isBurger": false,
+              "isPizza": true
+            },
+            {
+              "id": 11,
+              "name": "Pizza",
+              "prize": 200,
+              "quantity": 1,
+              "isActive": true,
+              "imagePath": null,
+              "prizeUnit": "Ruppes",
+              "isDrink": false,
+              "isBurger": false,
+              "isPizza": true
+            }
+          ]
+        }
+      ],
+      "createdDate": "0001-01-01T00:00:00"
+    }
+  }

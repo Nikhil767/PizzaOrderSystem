@@ -1,0 +1,18 @@
+<mat-card class="mat-elevation-z4">
+    <mat-card-header>
+      <mat-card-title>{{ cardItem.Name }}</mat-card-title>
+    </mat-card-header>
+    <img class="pizaa-image-layout" mat-card-image src="{{ cardItem.ImagePath }}" />
+    <mat-card-content>
+      <p>Prize : {{cardItem.Prize}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="incrementQuantity(cardItem.Name)" aria-label="Example icon button with a menu icon">
+        <mat-icon>+</mat-icon>
+      </button>
+      <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="decrementQuantity(cardItem.Name)" aria-label="Example icon button with a menu icon">
+        <mat-icon>-</mat-icon>
+      </button>
+      <button *ngIf="showAddToCart" mat-button (click)="addTocart(cardItem.Name)">Select</button>
+    </mat-card-actions>
+  </mat-card>

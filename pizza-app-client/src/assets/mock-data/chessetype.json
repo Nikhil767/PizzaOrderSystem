@@ -1,0 +1,33 @@
+{
+    "Message": "chessetype configuration loaded successfully",
+    "Data": [
+        {
+            "Id": 1,
+            "Name": "NoChesse",
+            "Prize": 0,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/chessetype/no-chesse.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 2,
+            "Name": "Chesse",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/chessetype/chesse.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 3,
+            "Name": "ExtraChesse",
+            "Prize": 750,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/chessetype/extra-chesse.jfif",
+            "PrizeUnit": "Ruppes"
+        }
+    ],
+    "Success": true
+}

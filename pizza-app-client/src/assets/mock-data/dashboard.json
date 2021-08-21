@@ -1,0 +1,130 @@
+{
+    "Data": [
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 1,
+            "Name": "Onion Pizza",
+            "Prize": 30,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/onion-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 2,
+            "Name": "Mushroom Pizza",
+            "Prize": 40,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/mushroom-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 3,
+            "Name": "Pepproni Pizza",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/pepperoni-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 4,
+            "Name": "Ranch Pizza",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/ranch-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 5,
+            "Name": "Macroni Pizza",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/macroni-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 6,
+            "Name": "Chesse Pizza",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/chesse-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 7,
+            "Name": "Veg Pizza",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/dashboard/veg-pizza.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 8,
+            "Name": "Pepsi",
+            "Prize": 30,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/other/pepsi.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 9,
+            "Name": "Orange Juie",
+            "Prize": 40,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/other/orange-juice.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "IsDrink": true,
+            "IsBurger": false,
+            "IsPizza": false,
+            "Id": 10,
+            "Name": "Coke",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/other/coke.jfif",
+            "PrizeUnit": "Ruppes"
+        }
+    ],
+    "PageNumber": 1,
+    "PageSize": 10,
+    "PageCount": 2,
+    "TotalRecords": 15,
+    "Message": "dashboard details loaded successfully",
+    "Success": true
+}

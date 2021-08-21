@@ -1,0 +1,7 @@
+<div class="container">
+    <div fxLayout="row wrap" fxLayoutGap="16px grid" fxFlexAlign="center">
+      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let cardItem of sizeTypes">
+      <app-card-item [cardItem]="cardItem" [showAddToCart]="true"></app-card-item>  
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,59 @@
+<!-- <div>{{sliderItems | json}}</div> -->
+<div class="content">
+    <ngb-carousel *ngIf="sliderItems">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="sliderItems[0].ImagePath" class="img-center" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{sliderItems[0].Name}}</h3>
+                <p>Prize : {{sliderItems[0].Prize}}</p>
+              </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="sliderItems[1].ImagePath" class="img-center" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{sliderItems[1].Name}}</h3>
+                <p>Prize : {{sliderItems[1].Prize}}</p>
+              </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="sliderItems[2].ImagePath" class="img-center" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{sliderItems[2].Name}}</h3>
+                <p>Prize : {{sliderItems[2].Prize}}</p>
+              </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="sliderItems[3].ImagePath" class="img-center" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{sliderItems[3].Name}}</h3>
+                <p>Prize : {{sliderItems[3].Prize}}</p>
+              </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="sliderItems[4].ImagePath" class="img-center" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{sliderItems[4].Name}}</h3>
+                <p>Prize : {{sliderItems[4].Prize}}</p>
+              </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="sliderItems[5].ImagePath" class="img-center" alt="Random first slide">
+              </div>
+              <div class="carousel-caption">
+                <h3>{{sliderItems[5].Name}}</h3>
+                <p>Prize : {{sliderItems[5].Prize}}</p>
+              </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

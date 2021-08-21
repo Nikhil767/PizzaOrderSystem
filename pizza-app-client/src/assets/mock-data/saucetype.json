@@ -1,0 +1,42 @@
+{
+    "Message": "saucetype configuration loaded successfully",
+    "Data": [
+        {
+            "Id": 1,
+            "Name": "Periperi",
+            "Prize": 50,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/saucetype/periperi-sauce.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 2,
+            "Name": "CashewCreamy",
+            "Prize": 85,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/saucetype/cashew-sauce.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 3,
+            "Name": "Pudina",
+            "Prize": 70,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/saucetype/pudina-sauce.jfif",
+            "PrizeUnit": "Ruppes"
+        },
+        {
+            "Id": 4,
+            "Name": "Tomatoo",
+            "Prize": 60,
+            "Quantity": 1,
+            "IsActive": true,
+            "ImagePath": "../../assets/saucetype/tomatoo-sauce.jfif",
+            "PrizeUnit": "Ruppes"
+        }
+    ],
+    "Success": true
+}
