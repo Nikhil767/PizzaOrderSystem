@@ -11,8 +11,10 @@ TestResult.xml
 
 project.lock.json
 
-*.pdb
+bin/
 *.obj
 *.tmp
 *.log
 *.ipdb
+*.pdb
+*.cache
