@@ -1,7 +1,7 @@
 <div class="container">
   <div *ngIf="!sizeTypeSelected">
     <div *ngFor="let cardItem of sizeTypes" class="pizza-card">
-      <app-card-item [cardItem]="cardItem" [showAddToCart]="true" 
+      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true" 
       (itemSelectEvent)="itemSelected($event)" ></app-card-item>
     </div>
   </div>
