@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Item } from '../interface/item';
+import { LookupItem } from '../interface/lookupitem';
+import { HelperService } from '../services/helper.service';
 
 @Component({
   selector: 'app-card-item',
@@ -10,22 +12,23 @@ export class CardItemComponent implements OnInit {
 
   @Input() type : string = '';
   @Input() cardItem : any;
-  @Input() showAddToCart : boolean = false;
+  @Input() showAddToCart : boolean = false;  
   @Output() itemSelectEvent = new EventEmitter<string>();
-  constructor() { }
+  constructor(private helperService : HelperService) { }
 
   ngOnInit(): void {
   }
 
-  incrementQuantity(itemName : any){
-    alert('quantity incremented for : ' + JSON.stringify(itemName));
+  incrementQuantity(item : Item){
+    this.helperService.addItem(item);
   }
 
-  decrementQuantity(itemName : any){
-    alert('quantity decremented for : ' + JSON.stringify(itemName));
+  decrementQuantity(item : Item){
+    this.helperService.removeItem(item);
   }
 
-  addTocart(itemName : string){
-    alert(JSON.stringify(itemName) + 'type is selected');
+  addTocart(item : LookupItem){
+    this.itemSelectEvent.emit(item.Type);
+    this.helperService.addLookupItem(item);
   }
 }

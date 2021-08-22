@@ -32,8 +32,8 @@
     {
     "id": 4,
     "name": "Tomatoo",
-    "type":"saucetype",
     "prize": 60.0,
+    "type":"saucetype",
     "quantity": 1,
     "isActive": true,
     "imagePath": "../../assets/saucetype/tomatoo-sauce.jfif",

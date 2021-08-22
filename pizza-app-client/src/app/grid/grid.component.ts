@@ -17,7 +17,6 @@ export class GridComponent implements OnInit {
       if(x){
         this.dashboardItems = x.Data
       }
-      console.log(x)
     });
   }
 

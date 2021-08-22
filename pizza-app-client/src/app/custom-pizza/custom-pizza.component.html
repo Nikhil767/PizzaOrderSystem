@@ -1,26 +1,34 @@
 <div class="container">
   <div *ngIf="!sizeTypeSelected">
+    <h4>Please select pizza Size</h4>
     <div *ngFor="let cardItem of sizeTypes" class="pizza-card">
       <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true" 
       (itemSelectEvent)="itemSelected($event)" ></app-card-item>
     </div>
   </div>
-  <!-- <div *ngIf="!sauceTypeSelected">
+  <div *ngIf="sizeTypeSelected && !sauceTypeSelected">
+    <h4>Please select Sauce</h4>
     <div *ngFor="let cardItem of sauceTypes" class="pizza-card">
-      <app-card-item [type]="custom-pizza" [cardItem]="cardItem" [showAddToCart]="true"
+      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
       (itemSelectEvent)="itemSelected($event)"></app-card-item>
     </div>
   </div>
-  <div *ngIf="!chesseTypeSelected">
+  <div *ngIf="sizeTypeSelected && sauceTypeSelected && !chesseTypeSelected">
+    <h4>Please select Chesse</h4>
     <div *ngFor="let cardItem of chesseTypes" class="pizza-card">
-      <app-card-item [type]="custom-pizza" [cardItem]="cardItem" [showAddToCart]="true"
+      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
       (itemSelectEvent)="itemSelected($event)"></app-card-item>
     </div>
   </div>
-  <div *ngIf="!toppingTypeSelected">
+  <div *ngIf="sizeTypeSelected && sauceTypeSelected && chesseTypeSelected && !toppingTypeSelected">
+    <h4>Please select Toppings</h4>
     <div *ngFor="let cardItem of toppingTypes" class="pizza-card">
-      <app-card-item [type]="custom-pizza" [cardItem]="cardItem" [showAddToCart]="true"
+      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
       (itemSelectEvent)="itemSelected($event)"></app-card-item>
     </div>
-  </div> -->
+  </div>
+  <div *ngIf="sizeTypeSelected && sauceTypeSelected && chesseTypeSelected && toppingTypeSelected">
+    <h4>You have successfully customized pizza</h4>
+    <button class="success">Place order</button>
+    </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CustomType } from '../interface/customtype';
 import { HttpService } from '../services/http.service';
 
 @Component({
@@ -30,7 +31,6 @@ export class CustomPizzaComponent implements OnInit {
         if(x){
           this.sizeTypes = x.Data
         }
-        console.log(x)
       });
   }
 
@@ -40,7 +40,6 @@ export class CustomPizzaComponent implements OnInit {
         if(x){
           this.sauceTypes = x.Data
         }
-        console.log(x)
       });
   }
 
@@ -50,7 +49,6 @@ export class CustomPizzaComponent implements OnInit {
         if(x){
           this.chesseTypes = x.Data
         }
-        console.log(x)
       });
   }
 
@@ -60,12 +58,24 @@ export class CustomPizzaComponent implements OnInit {
         if(x){
           this.toppingTypes = x.Data
         }
-        console.log(x)
       });
   }
 
   itemSelected(newItem: string) {
-    alert(newItem);
+    switch(newItem){
+      case CustomType.sizetype.toString() :
+        this.sizeTypeSelected = true;
+        break;
+      case CustomType.saucetype.toString() :
+        this.sauceTypeSelected = true;
+        break;
+      case CustomType.chessetype.toString() :
+        this.chesseTypeSelected = true;
+        break;
+      case CustomType.toppingtype.toString() :
+        this.toppingTypeSelected = true;
+        break;
+    }
   }
 
   ngOnInit(): void {

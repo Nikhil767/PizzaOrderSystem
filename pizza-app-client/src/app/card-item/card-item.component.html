@@ -13,7 +13,7 @@
       <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="decrementQuantity(cardItem)" aria-label="Example icon button with a menu icon">
         <mat-icon>remove_shopping_cart</mat-icon>
       </button>
-      <button *ngIf="showAddToCart" mat-button (click)="addTocart(cardItem.Name)">
+      <button *ngIf="showAddToCart" mat-button (click)="addTocart(cardItem)">
         <mat-icon>add_circle_outline</mat-icon>
       </button>
       <!-- <button *ngIf="showAddToCart" mat-button (click)="addTocart(cardItem.Name)">

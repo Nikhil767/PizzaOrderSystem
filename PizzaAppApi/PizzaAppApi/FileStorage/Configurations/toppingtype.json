@@ -3,8 +3,8 @@
     "id": 1,
     "name": "Marinara",
     "prize": 0.0,
-    "quantity": 1,
     "type":"toppingtype",
+    "quantity": 1,
     "isActive": true,
     "imagePath": "../../assets/toppingtype/marinara.jpg",
     "prizeUnit": "Ruppes"
@@ -13,30 +13,30 @@
     "id": 2,
     "name": "Pepperoni",
     "prize": 75.0,
-    "quantity": 1,
     "type":"toppingtype",
+    "quantity": 1,
     "isActive": true,
-    "imagePath": "../../assets/toppingtype/peproni.jpg",
+    "imagePath": "../../assets/toppingtype/peproni.jfif",
     "prizeUnit": "Ruppes"
   },
   {
     "id": 3,
     "name": "Mushrooms",
     "prize": 80.0,
-    "quantity": 1,
     "type":"toppingtype",
+    "quantity": 1,
     "isActive": true,
-    "imagePath": "../../assets/toppingtype/mushroom.jpg",
+    "imagePath": "../../assets/toppingtype/mushroom.jfif",
     "prizeUnit": "Ruppes"
   },
   {
     "id": 4,
     "name": "Onions",
     "prize": 50.0,
-    "quantity": 1,
     "type":"toppingtype",
+    "quantity": 1,
     "isActive": true,
-    "imagePath": "../../assets/toppingtype/onion.jpg",
+    "imagePath": "../../assets/toppingtype/onion.jfif",
     "prizeUnit": "Ruppes"
   }
 ]

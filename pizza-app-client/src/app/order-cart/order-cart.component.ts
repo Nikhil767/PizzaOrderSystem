@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HelperService } from '../services/helper.service';
 
 @Component({
   selector: 'app-order-cart',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderCartComponent implements OnInit {
 
-  constructor() { }
-
+  totalPrize : number = 0;
+  constructor(private helperService: HelperService) { }
   ngOnInit(): void {
+    this.helperService.prizeUpdatedEvent.subscribe(x=>{
+      this.totalPrize = x;
+    });
   }
 
 }

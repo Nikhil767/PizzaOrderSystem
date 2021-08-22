@@ -1,9 +1,9 @@
 import { Pizaa } from "./pizaa";
 
 export interface Order {
-    OrderID: string;
+    OrderID?: string;
     TotalPrize: number;
     PrizeUnit: string;
     OrderItems: Pizaa[];
-    CreatedDate: Date;
+    CreatedDate?: Date;
   }
