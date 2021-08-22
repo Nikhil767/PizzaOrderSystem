@@ -8,6 +8,11 @@ import { HttpService } from '../services/http.service';
 })
 export class CustomPizzaComponent implements OnInit {
 
+  sizeTypeSelected : boolean = false;
+  sauceTypeSelected : boolean = false;
+  chesseTypeSelected : boolean = false;
+  toppingTypeSelected : boolean = false;
+
   sizeTypes : any;
   sauceTypes : any;
   chesseTypes : any;
@@ -57,6 +62,10 @@ export class CustomPizzaComponent implements OnInit {
         }
         console.log(x)
       });
+  }
+
+  itemSelected(newItem: string) {
+    alert(newItem);
   }
 
   ngOnInit(): void {

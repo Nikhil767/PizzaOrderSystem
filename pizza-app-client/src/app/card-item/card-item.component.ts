@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Item } from '../interface/item';
 
 @Component({
@@ -8,22 +8,24 @@ import { Item } from '../interface/item';
 })
 export class CardItemComponent implements OnInit {
 
+  @Input() type : string = '';
   @Input() cardItem : any;
   @Input() showAddToCart : boolean = false;
+  @Output() itemSelectEvent = new EventEmitter<string>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  incrementQuantity(itemName : string){
-    alert('quantity incremented for : ' + itemName);
+  incrementQuantity(itemName : any){
+    alert('quantity incremented for : ' + JSON.stringify(itemName));
   }
 
-  decrementQuantity(itemName : string){
-    alert('quantity decremented for : ' + itemName);
+  decrementQuantity(itemName : any){
+    alert('quantity decremented for : ' + JSON.stringify(itemName));
   }
 
   addTocart(itemName : string){
-    alert(itemName + 'type is selected');
+    alert(JSON.stringify(itemName) + 'type is selected');
   }
 }

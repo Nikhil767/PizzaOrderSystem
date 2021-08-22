@@ -1,7 +1,26 @@
 <div class="container">
-    <div fxLayout="row wrap" fxLayoutGap="16px grid" fxFlexAlign="center">
-      <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let cardItem of sizeTypes">
-      <app-card-item [cardItem]="cardItem" [showAddToCart]="true"></app-card-item>  
-      </div>
+  <div *ngIf="!sizeTypeSelected">
+    <div *ngFor="let cardItem of sizeTypes" class="pizza-card">
+      <app-card-item [cardItem]="cardItem" [showAddToCart]="true" 
+      (itemSelectEvent)="itemSelected($event)" ></app-card-item>
     </div>
   </div>
+  <!-- <div *ngIf="!sauceTypeSelected">
+    <div *ngFor="let cardItem of sauceTypes" class="pizza-card">
+      <app-card-item [type]="custom-pizza" [cardItem]="cardItem" [showAddToCart]="true"
+      (itemSelectEvent)="itemSelected($event)"></app-card-item>
+    </div>
+  </div>
+  <div *ngIf="!chesseTypeSelected">
+    <div *ngFor="let cardItem of chesseTypes" class="pizza-card">
+      <app-card-item [type]="custom-pizza" [cardItem]="cardItem" [showAddToCart]="true"
+      (itemSelectEvent)="itemSelected($event)"></app-card-item>
+    </div>
+  </div>
+  <div *ngIf="!toppingTypeSelected">
+    <div *ngFor="let cardItem of toppingTypes" class="pizza-card">
+      <app-card-item [type]="custom-pizza" [cardItem]="cardItem" [showAddToCart]="true"
+      (itemSelectEvent)="itemSelected($event)"></app-card-item>
+    </div>
+  </div> -->
+</div>

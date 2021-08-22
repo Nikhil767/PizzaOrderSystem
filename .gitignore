@@ -1,0 +1,18 @@
+# build results
+[Dd]ebug/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+.vs/
+
+*.VisualState.xml
+TestResult.xml
+
+project.lock.json
+
+*.pdb
+*.obj
+*.tmp
+*.log
+*.ipdb
