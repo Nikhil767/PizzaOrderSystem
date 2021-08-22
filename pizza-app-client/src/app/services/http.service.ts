@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { OrderDTO } from '../interface/orderdto';
 
 @Injectable({
   providedIn: 'root'
@@ -34,7 +35,7 @@ export class HttpService {
     return this.http.get<any>(this.baseURL + 'api/Dashboard/' + type);
   }
 
-  postUserOrder(type: string, payload : any) {
+  postUserOrder(payload : OrderDTO) {
     return this.http.post<any>(this.baseURL + 'api/Order', payload);
   }
 }

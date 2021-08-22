@@ -24,11 +24,16 @@ export class OrderCartComponent {
       let isValid = this.regexp.test(email.toString());
       if(isValid){
         alert('order placed successfully for : '+ email );
-        this.helperService.placeOrder();
+        this.helperService.placeOrder(email);
         return;
       }      
     }
     alert('without email order can not be placed');
+  }
+
+  clearCart(){
+    this.totalPrize = 0;
+    this.helperService.clearCart();
   }
 
   ngOnDestroy(): void {
