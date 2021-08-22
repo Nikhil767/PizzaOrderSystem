@@ -4,6 +4,7 @@
     "name": "Small",
     "prize": 150.0,
     "quantity": 1,
+    "type":"sizetype",
     "isActive": true,
     "imagePath": "../../assets/sizetype/sm-pizza.jfif",
     "prizeUnit": "Ruppes"
@@ -13,6 +14,7 @@
     "name": "Medium",
     "prize": 200.0,
     "quantity": 1,
+    "type":"sizetype",
     "isActive": true,
     "imagePath": "../../assets/sizetype/m-pizza.jfif",
     "prizeUnit": "Ruppes"
@@ -22,6 +24,7 @@
     "name": "Large",
     "prize": 250.0,
     "quantity": 1,
+    "type":"sizetype",
     "isActive": true,
     "imagePath": "../../assets/sizetype/lg-pizza.jfif",
     "prizeUnit": "Ruppes"
