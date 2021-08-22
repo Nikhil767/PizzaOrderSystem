@@ -10,6 +10,7 @@ import { HelperService } from '../services/helper.service';
 })
 export class CardItemComponent implements OnInit {
 
+  @Input() index : number = 0;
   @Input() type : string = '';
   @Input() cardItem : any;
   @Input() showAddToCart : boolean = false;  

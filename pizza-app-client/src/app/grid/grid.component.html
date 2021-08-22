@@ -1,7 +1,7 @@
   <div class="container">
-    <div *ngFor="let cardItem of dashboardItems" class="pizza-card">
+    <div *ngFor="let cardItem of dashboardItems;let i = index" class="pizza-card">
   
-      <app-card-item [cardItem]="cardItem"></app-card-item>
+      <app-card-item [cardItem]="cardItem" [index]="i"></app-card-item>
   
     </div>
   </div>

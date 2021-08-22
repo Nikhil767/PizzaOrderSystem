@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { CustomType } from '../interface/customtype';
 import { HttpService } from '../services/http.service';
 
@@ -7,7 +8,7 @@ import { HttpService } from '../services/http.service';
   templateUrl: './custom-pizza.component.html',
   styleUrls: ['./custom-pizza.component.css']
 })
-export class CustomPizzaComponent implements OnInit {
+export class CustomPizzaComponent {
 
   sizeTypeSelected : boolean = false;
   sauceTypeSelected : boolean = false;
@@ -18,6 +19,7 @@ export class CustomPizzaComponent implements OnInit {
   sauceTypes : any;
   chesseTypes : any;
   toppingTypes : any;
+  subscription: Subscription[] = [];
   constructor(private httpService : HttpService) { 
     this.getSizeTypes();
     this.getSauceTypes();
@@ -26,39 +28,39 @@ export class CustomPizzaComponent implements OnInit {
   }
 
   getSizeTypes(){
-    this.httpService.getLookupSizeType().subscribe(x => 
+    this.subscription.push(this.httpService.getLookupSizeType().subscribe(x => 
       {
         if(x){
           this.sizeTypes = x.Data
         }
-      });
+      }));
   }
 
   getSauceTypes(){
-    this.httpService.getLookupSauceType().subscribe(x => 
+    this.subscription.push(this.httpService.getLookupSauceType().subscribe(x => 
       {
         if(x){
           this.sauceTypes = x.Data
         }
-      });
+      }));
   }
 
   getChesseTypes(){
-    this.httpService.getLookupChesseType().subscribe(x => 
+    this.subscription.push(this.httpService.getLookupChesseType().subscribe(x => 
       {
         if(x){
           this.chesseTypes = x.Data
         }
-      });
+      }));
   }
 
   getToppingTypes(){
-    this.httpService.getLookupToppingType().subscribe(x => 
+    this.subscription.push(this.httpService.getLookupToppingType().subscribe(x => 
       {
         if(x){
           this.toppingTypes = x.Data
         }
-      });
+      }));
   }
 
   itemSelected(newItem: string) {
@@ -78,7 +80,10 @@ export class CustomPizzaComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
+  ngOnDestroy(): void {
+    if(this.subscription){
+      this.subscription.forEach(x=> x.unsubscribe());
+    }
   }
 
 }

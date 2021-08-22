@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { HttpService } from '../services/http.service';
 
 @Component({
@@ -6,17 +7,20 @@ import { HttpService } from '../services/http.service';
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
-export class SliderComponent implements OnInit {
+export class SliderComponent {
 
   sliderItems : any;
+  subscription : Subscription;
   constructor(private httpService : HttpService) { 
-      httpService.getSliderConfigs('slider').subscribe(x => {
+      this.subscription = httpService.getSliderConfigs('slider').subscribe(x => {
       this.sliderItems = x.Data
-      //console.log(x)
     });
   }
 
-  ngOnInit(): void {
+  ngOnDestroy(): void {
+    if(this.subscription){
+      this.subscription.unsubscribe();
+    }
   }
 
 }

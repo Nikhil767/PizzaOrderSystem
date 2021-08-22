@@ -100,4 +100,8 @@ export class HelperService {
     this.prizeUpdatedEvent.emit(this.totalPrize);
   }
 
+  placeOrder(){
+    
+  }
+
 }
