@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Marinara",
-    "prize": 0.0,
+    "prize": 60.0,
     "type":"toppingtype",
     "quantity": 1,
     "isActive": true,

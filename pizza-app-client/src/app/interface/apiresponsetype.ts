@@ -1,5 +1,5 @@
 export interface ApiResponseType {
-    Meassage: string;
+    Message: string;
     Data: any;
     Success: boolean;
   }

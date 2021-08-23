@@ -14,18 +14,8 @@ export class HelperService {
   @Output() prizeUpdatedEvent = new EventEmitter<number>();
 
   email : string = '';
-  lookupItem : LookupItem ={
-    Id: '',
-    Name: '',
-    Prize: 0,
-    Quantity: 0,
-    Type: '',
-    IsActive: false,
-    ImagePath: '',
-    PrizeUnit: '',
-  }
   item : Item = {
-    Id: '',
+    Id: 1,
     Name: '',
     Prize: 0,
     Quantity: 0,
@@ -54,7 +44,7 @@ export class HelperService {
 
   resetItem(){
     this.item = {
-      Id: '',
+      Id: 1,
       Name: '',
       Prize: 0,
       Quantity: 0,
@@ -118,6 +108,9 @@ export class HelperService {
     this.orderDTO.Order.TotalPrize = this.totalPrize;
     this.orderDTO.Order.OrderItems = [...this.pizzaItems,...this.customPizzaItems];
     this.httpService.postUserOrder(this.orderDTO).subscribe(data => {
+      if(data.Data){
+        alert(data.Message + ' for : '+ email );
+      }
       console.log(data);
     });
   }

@@ -22,8 +22,7 @@ export class OrderCartComponent {
     let email = prompt('please provide email for placing the order','email id');
     if(email){
       let isValid = this.regexp.test(email.toString());
-      if(isValid){
-        alert('order placed successfully for : '+ email );
+      if(isValid){        
         this.helperService.placeOrder(email);
         return;
       }      

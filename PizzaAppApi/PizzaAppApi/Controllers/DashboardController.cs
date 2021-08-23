@@ -30,7 +30,7 @@ namespace AngularDemo.Controllers
             try
             {
                 var dataFromFile = await _dashboardService.GetDashboardDetails(configName, PageSize, PageNumber);
-                var msg = dataFromFile.Data.Count() > 0 ? "dashboard details loaded successfully" : "No Data found";
+                var msg = dataFromFile.Data.Count() > 0 ? $"{configName} details loaded successfully" : "No Data found";
                 return Ok(ServiceResponseDTO.SuccessResponsePagination(msg, dataFromFile));
             }
             catch (ArgumentException ex)

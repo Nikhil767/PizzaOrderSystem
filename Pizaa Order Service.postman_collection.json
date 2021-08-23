@@ -1,0 +1,346 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Pizaa Order Service",
+		"_postman_id": "ac053779-b7dc-5916-84be-721061efb891",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Pizza SizeType lookup",
+			"request": {
+				"url": "https://localhost:44358/api/Lookup/sizetype",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "67fe6e45-6459-4e81-b5d2-6cea8d830ab4",
+					"name": "Get Pizza SizeType lookup",
+					"originalRequest": {
+						"url": "https://localhost:44358/api/Lookup/sizetype",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "488",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Aug 2021 12:39:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 157,
+					"body": "{\"Message\":\"sizetype configuration loaded successfully\",\"Data\":[{\"Id\":1,\"Name\":\"Small\",\"Prize\":150,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/sizetype/sm-pizza.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":2,\"Name\":\"Medium\",\"Prize\":200,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/sizetype/m-pizza.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":3,\"Name\":\"Large\",\"Prize\":250,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/sizetype/lg-pizza.jfif\",\"PrizeUnit\":\"Ruppes\"}],\"Success\":true}"
+				}
+			]
+		},
+		{
+			"name": "Get Pizza SauceType lookup",
+			"request": {
+				"url": "https://localhost:44358/api/Lookup/saucetype",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "44aabc64-f03a-4365-82d6-a41299e8d026",
+					"name": "Get Pizza SauceType lookup",
+					"originalRequest": {
+						"url": "https://localhost:44358/api/Lookup/saucetype",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Aug 2021 12:40:23 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 85,
+					"body": "{\"Message\":\"saucetype configuration loaded successfully\",\"Data\":[{\"Id\":1,\"Name\":\"Periperi\",\"Prize\":50,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/saucetype/periperi-sauce.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":2,\"Name\":\"CashewCreamy\",\"Prize\":85,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/saucetype/cashew-sauce.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":3,\"Name\":\"Pudina\",\"Prize\":70,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/saucetype/pudina-sauce.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":4,\"Name\":\"Tomatoo\",\"Prize\":60,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/saucetype/tomatoo-sauce.jfif\",\"PrizeUnit\":\"Ruppes\"}],\"Success\":true}"
+				}
+			]
+		},
+		{
+			"name": "Get Pizza ChesseType lookup",
+			"request": {
+				"url": "https://localhost:44358/api/Lookup/chessetype",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "d4ca4a07-dd7b-411d-a415-4cb0c6c1d9a6",
+					"name": "Get Pizza ChesseType lookup",
+					"originalRequest": {
+						"url": "https://localhost:44358/api/Lookup/chessetype",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "506",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Aug 2021 12:40:41 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 111,
+					"body": "{\"Message\":\"chessetype configuration loaded successfully\",\"Data\":[{\"Id\":1,\"Name\":\"NoChesse\",\"Prize\":0,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/chessetype/no-chesse.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":2,\"Name\":\"Chesse\",\"Prize\":50,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/chessetype/chesse.jfif\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":3,\"Name\":\"ExtraChesse\",\"Prize\":750,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/chessetype/extra-chesse.jfif\",\"PrizeUnit\":\"Ruppes\"}],\"Success\":true}"
+				}
+			]
+		},
+		{
+			"name": "Get Pizza ToppingType lookup",
+			"request": {
+				"url": "https://localhost:44358/api/Lookup/toppingtype",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "7585734d-a27f-4f65-b3c2-edf1854f9a71",
+					"name": "Get Pizza ToppingType lookup",
+					"originalRequest": {
+						"url": "https://localhost:44358/api/Lookup/toppingtype",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Aug 2021 12:40:46 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 30,
+					"body": "{\"Message\":\"toppingtype configuration loaded successfully\",\"Data\":[{\"Id\":1,\"Name\":\"Marinara\",\"Prize\":0,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/toppingtype/marinara.jpg\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":2,\"Name\":\"Pepperoni\",\"Prize\":75,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/toppingtype/peproni.jpg\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":3,\"Name\":\"Mushrooms\",\"Prize\":80,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/toppingtype/mushroom.jpg\",\"PrizeUnit\":\"Ruppes\"},{\"Id\":4,\"Name\":\"Onions\",\"Prize\":50,\"Quantity\":1,\"IsActive\":true,\"ImagePath\":\"../../assets/toppingtype/onion.jpg\",\"PrizeUnit\":\"Ruppes\"}],\"Success\":true}"
+				}
+			]
+		},
+		{
+			"name": "Get Dashboard Items",
+			"request": {
+				"url": "https://localhost:44358/api/Dashboard",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Slider data",
+			"request": {
+				"url": "https://localhost:5001/api/Dashboard/slider",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post User Order 5001",
+			"request": {
+				"url": "https://localhost:44358/api/Order",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"nikhildeshmukh76@gmail.com\",\n  \"order\": {\n    \"orderID\": null,\n    \"totalPrize\": 100,\n    \"prizeUnit\": \"Ruppes\",\n    \"orderItems\": [\n      {\n        \"items\": [\n          {\n            \"id\": 10,\n            \"name\": \"Chesse Pizza\",\n            \"prize\": 100,\n            \"quantity\": 1,\n            \"isActive\": true,\n            \"imagePath\": null,\n            \"prizeUnit\": \"Ruppes\",\n            \"isDrink\": false,\n            \"isBurger\": false,\n            \"isPizza\": true\n          },\n          {\n            \"id\": 11,\n            \"name\": \"Pizza\",\n            \"prize\": 200,\n            \"quantity\": 1,\n            \"isActive\": true,\n            \"imagePath\": null,\n            \"prizeUnit\": \"Ruppes\",\n            \"isDrink\": false,\n            \"isBurger\": false,\n            \"isPizza\": true\n          }\n        ]\n      }\n    ],\n    \"createdDate\": \"0001-01-01T00:00:00\"\n  }\n}"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "413f6099-aebc-4c18-8e6f-6fee2e9ab20a",
+					"name": "Post User Order",
+					"originalRequest": {
+						"url": "https://localhost:44358/api/Order",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"nikhildeshmukh76@gmail.com\",\n  \"order\": {\n    \"orderID\": null,\n    \"totalPrize\": 100,\n    \"prizeUnit\": \"Ruppes\",\n    \"orderItems\": [\n      {\n        \"items\": [\n          {\n            \"id\": 10,\n            \"name\": \"Chesse Pizza\",\n            \"prize\": 100,\n            \"quantity\": 1,\n            \"isActive\": true,\n            \"imagePath\": null,\n            \"prizeUnit\": \"Ruppes\",\n            \"isDrink\": false,\n            \"isBurger\": false,\n            \"isPizza\": true\n          },\n          {\n            \"id\": 11,\n            \"name\": \"Pizza\",\n            \"prize\": 200,\n            \"quantity\": 1,\n            \"isActive\": true,\n            \"imagePath\": null,\n            \"prizeUnit\": \"Ruppes\",\n            \"isDrink\": false,\n            \"isBurger\": false,\n            \"isPizza\": true\n          }\n        ]\n      }\n    ],\n    \"createdDate\": \"0001-01-01T00:00:00\"\n  }\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Sat, 21 Aug 2021 12:40:55 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 143,
+					"body": "{\"Message\":\"Order is placed successfully\",\"Data\":true,\"Success\":true}"
+				}
+			]
+		}
+	]
+}

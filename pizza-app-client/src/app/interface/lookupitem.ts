@@ -1,9 +1,11 @@
+import { NumberFormatStyle } from "@angular/common";
+
 export interface LookupItem {
-    Id: string;
+    Id: number;
     Name: string;
     Prize: number;
     Quantity: number;
-    Type: string;
+    Type?: string;
     IsActive: boolean;
     ImagePath: string;
     PrizeUnit: string;
