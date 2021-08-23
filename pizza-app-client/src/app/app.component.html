@@ -3,11 +3,12 @@
     <h3 class="title center">{{title}}</h3>
   </header>  
   <app-slider class="pizza-slider"></app-slider>
-  <nav class="menu">
+  <hr>
+  <nav class="menu center">
     <a class="button" routerLinkActive="activebutton" routerLink="/dashboard">Dashboard</a> |
     <a class="button" routerLinkActive="activebutton" routerLink="/custom-pizza">Custom Pizza</a>
   </nav>
-
+  <hr>
   <div class="main-container">
     <div class="left-container">
       <router-outlet></router-outlet>
@@ -16,5 +17,7 @@
       <app-order-cart></app-order-cart>
     </div>
   </div>
-  <footer><h3>Thanks for visiting Pizza Order system</h3></footer>
+  <hr>
+  <footer class="center"><h2>Thanks for visiting Pizza Order system</h2></footer>
+  <br>
 </div>
