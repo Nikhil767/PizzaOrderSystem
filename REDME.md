@@ -1,6 +1,8 @@
 # Pizza Order System
 - Two projects :
 1. **PizzaAppApi** - for Backend .net core api's
+url : https://localhost:44358
+
 Structure :
 PizzaAppApi - will have api end points (controllers)
 Domain - will have all Entities, DTO, Repository Interfaces
@@ -24,6 +26,8 @@ also shared the postman collection file with input payloads (Pizaa Order Service
 before placing the order user need to provide emaild so data will be stored based on per emailid for per user
 
 2. **pizza-app-client** - for angular [12] (frontend) UI
+url : http://localhost:4200/dashboard
+
 On client side there are following components:
 AppComponent (Default)
 SliderComponent - to show sliding on main page
