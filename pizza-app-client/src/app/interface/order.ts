@@ -1,9 +1,9 @@
-import { Pizaa } from "./pizaa";
+import { Item } from "./item";
 
 export interface Order {
     OrderID?: string;
     TotalPrize: number;
     PrizeUnit: string;
-    OrderItems: Pizaa[];
+    OrderItems: Item[];
     CreatedDate?: Date;
   }

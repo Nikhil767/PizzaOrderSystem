@@ -187,24 +187,18 @@ namespace UnitTest
                     OrderID = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8),
                     TotalPrize = 50,
                     PrizeUnit = "Ruppes",
-                    OrderItems = new Pizza[]
+                    OrderItems = new Item[]
                     {
-                        new Pizza
+                        new Item
                         {
+                            Id = 1,
+                            IsActive = true,
+                            Name ="Coke",
+                            Prize = 50,
+                            PrizeUnit = "Ruppes",
+                            Quantity = 1,
+                            IsDrink = true,
                             IsCustomPizza = false,
-                            PizzaItems = new List<Item>
-                            {
-                                new Item
-                                {
-                                    Id = 1,
-                                    IsActive = true,
-                                    Name ="Coke",
-                                    Prize = 50,
-                                    PrizeUnit = "Ruppes",
-                                    Quantity = 1,
-                                    IsDrink = true
-                                }
-                            }
                         }
                     }
                 },
@@ -213,26 +207,19 @@ namespace UnitTest
                     OrderID = Guid.NewGuid().ToString().Replace("-", "").Substring(0, 8),
                     TotalPrize = 300,
                     PrizeUnit = "Ruppes",
-                    OrderItems = new Pizza[]
+                    OrderItems = new Item[]
                     {
-                        new Pizza
+                        new Item
                         {
-                            IsCustomPizza = false,
-                            PizzaItems = new List<Item>
-                            {
-                                new Item
-                                {
-                                    Id = 1,
-                                    IsActive = true,
-                                    Name ="Medium",
-                                    Prize = 300,
-                                    PrizeUnit = "Ruppes",
-                                    Quantity = 1,
-                                    IsDrink = false,
-                                    IsPizza = true
-                                }
-                            }
-                        }
+                            Id = 1,
+                            IsActive = true,
+                            Name ="Medium",
+                            Prize = 300,
+                            PrizeUnit = "Ruppes",
+                            Quantity = 1,
+                            IsPizza = true,
+                            IsDrink = false,
+                        }                        
                     }
                 }
             };

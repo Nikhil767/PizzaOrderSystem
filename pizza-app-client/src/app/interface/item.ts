@@ -4,4 +4,5 @@ export interface Item extends LookupItem {
     IsDrink: boolean;
     IsBurger: boolean;
     IsPizza: boolean;
+    IsCustomPizza: boolean;
   }

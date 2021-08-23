@@ -3,7 +3,6 @@ import { Item } from '../interface/item';
 import { LookupItem } from '../interface/lookupitem';
 import { Order } from '../interface/order';
 import { OrderDTO } from '../interface/orderdto';
-import { Pizaa } from '../interface/pizaa';
 import { HttpService } from './http.service';
 
 @Injectable({
@@ -37,18 +36,11 @@ export class HelperService {
     IsDrink : false,
     IsBurger : false,
     IsPizza : false,
+    IsCustomPizza : false
   }
   pizzaItems : Item[] = [];
-  pizza : Pizaa = {
-    IsCustomPizza : false,
-    PizzaItems : this.pizzaItems
-  }
   customPizzaItems : Item[] = [];
-  customPizza : Pizaa = {
-    IsCustomPizza : true,
-    PizzaItems : this.customPizzaItems
-  }
-  orderItems : Pizaa[] = [];
+  orderItems : Item[] = [];
   order : Order = {
     TotalPrize:0,
     PrizeUnit:'',
@@ -59,36 +51,6 @@ export class HelperService {
     Order: this.order
   };
   constructor(private httpService : HttpService) { }
-
-  initializeOrderObject(){
-    this.orderDTO = {
-      Email : this.email,
-      Order: {
-        TotalPrize:0,
-        PrizeUnit:'',
-        OrderItems:[
-          {
-            IsCustomPizza : false,
-            PizzaItems : [
-              {
-                Id: '',
-                Name: '',
-                Prize: 0,
-                Quantity: 0,
-                Type: '',
-                IsActive: false,
-                ImagePath: '',
-                PrizeUnit: '',
-                IsDrink : false,
-                IsBurger : false,
-                IsPizza : false,
-              }
-            ]
-          }
-        ]
-      }
-    }
-  }
 
   resetItem(){
     this.item = {
@@ -103,6 +65,7 @@ export class HelperService {
       IsDrink : false,
       IsBurger : false,
       IsPizza : false,
+      IsCustomPizza : false
     }
   }
 
@@ -118,6 +81,7 @@ export class HelperService {
     this.item.IsBurger = false;
     this.item.IsDrink = false;
     this.item.IsPizza = true;
+    this.item.IsCustomPizza = true;
 
     this.customPizzaItems.push(this.item);
     this.resetItem();
@@ -150,17 +114,21 @@ export class HelperService {
 
   placeOrder(email : string){
     this.orderDTO.Email = email;
-    this.orderDTO.Order.OrderItems.concat()
-    // placeUserOrder with final orderDTO object
-    //this.httpService.postUserOrder(this.orderDTO);
+    this.orderDTO.Order.PrizeUnit = 'Ruppes';
+    this.orderDTO.Order.TotalPrize = this.totalPrize;
+    this.orderDTO.Order.OrderItems = [...this.pizzaItems,...this.customPizzaItems];
+    this.httpService.postUserOrder(this.orderDTO).subscribe(data => {
+      console.log(data);
+    });
   }
 
   clearCart(){
     this.email = '';
-    this.totalPrize = 0;
     this.resetItem();
+    this.totalPrize = 0;
     this.pizzaItems = [];
     this.orderItems = [];
+    this.customPizzaItems = [];
   }
 
 }
