@@ -13,7 +13,7 @@
         <mat-icon>add_shopping_cart</mat-icon>
       </button>
       <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="decrementQuantity(cardItem, index)" 
-        [disabled]="disabledRemoveButtons.indexOf(index) !== -1"
+        [disabled]="disabledAddButtons.length == 0 || disabledRemoveButtons.indexOf(index) !== -1"
         aria-label="Example icon button with a menu icon">
         <mat-icon>remove_shopping_cart</mat-icon>
       </button>
