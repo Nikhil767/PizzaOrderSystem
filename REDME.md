@@ -11,6 +11,11 @@ Services - will have business logic & validation
 Infrastructure - will have Repository layer
 UniteTest - will have unit test for services
 
+FileStorage - is the folder under which all files are stored
+Configurations - under this custom pizza data is stored
+Dashboard - under this folder dashboard data & slider data is stored
+UserStorage - under this user order is stored, per email respected orders will get stored
+
 
 Api url are as follows : 
 for getting SizeTypes (GET): https://localhost:44358/api/Lookup/sizetype

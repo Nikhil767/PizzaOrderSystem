@@ -24,6 +24,7 @@ export class OrderCartComponent {
       let isValid = this.regexp.test(email.toString());
       if(isValid){        
         this.helperService.placeOrder(email);
+        this.clearCart();
         return;
       }      
     }
