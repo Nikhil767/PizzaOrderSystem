@@ -7,17 +7,18 @@
       <p>Prize : {{cardItem.Prize}}</p>
     </mat-card-content>
     <mat-card-actions>
-      <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="incrementQuantity(cardItem)" aria-label="Example icon button with a menu icon">
+      <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="incrementQuantity(cardItem, index)" 
+       [disabled]="disabledAddButtons.indexOf(index) !== -1"
+        aria-label="Example icon button with a menu icon">
         <mat-icon>add_shopping_cart</mat-icon>
       </button>
-      <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="decrementQuantity(cardItem)" aria-label="Example icon button with a menu icon">
+      <button *ngIf="!showAddToCart" mat-mini-fab color="primary" (click)="decrementQuantity(cardItem, index)" 
+        [disabled]="disabledRemoveButtons.indexOf(index) !== -1"
+        aria-label="Example icon button with a menu icon">
         <mat-icon>remove_shopping_cart</mat-icon>
       </button>
       <button *ngIf="showAddToCart" mat-button (click)="addTocart(cardItem)">
         <mat-icon>add_circle_outline</mat-icon>
       </button>
-      <!-- <button *ngIf="showAddToCart" mat-button (click)="addTocart(cardItem.Name)">
-        <mat-icon>clear</mat-icon>
-      </button> -->
     </mat-card-actions>
   </mat-card>

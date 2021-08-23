@@ -1,5 +1,8 @@
 Total Amount : <span>{{totalPrize}}</span>
 <br>
-<button class="success" (click)="askforEmail()">Place order</button>
-
-<button class="success" (click)="clearCart()">Reset Cart</button>
+<button mat-button (click)="askforEmail()">
+    <mat-icon>shopping_cart</mat-icon> Place order
+</button>
+<button mat-button (click)="clearCart()">
+    <mat-icon>clear</mat-icon> Clear Cart
+</button> 

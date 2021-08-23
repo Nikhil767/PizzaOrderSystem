@@ -8,8 +8,10 @@ import { HelperService } from '../services/helper.service';
   templateUrl: './card-item.component.html',
   styleUrls: ['./card-item.component.css']
 })
-export class CardItemComponent implements OnInit {
+export class CardItemComponent {
 
+  disabledAddButtons : number[] = [];
+  disabledRemoveButtons : number[] = [];
   @Input() index : number = 0;
   @Input() type : string = '';
   @Input() cardItem : any;
@@ -17,14 +19,17 @@ export class CardItemComponent implements OnInit {
   @Output() itemSelectEvent = new EventEmitter<string>();
   constructor(private helperService : HelperService) { }
 
-  ngOnInit(): void {
-  }
-
-  incrementQuantity(item : Item){
+  incrementQuantity(item : Item, index : number){
+    let ind = this.disabledRemoveButtons.indexOf(index) 
+    ind > -1 ?  this.disabledRemoveButtons.splice(index, 1) : 0;
+    this.disabledAddButtons.push(index);
     this.helperService.addItem(item);
   }
 
-  decrementQuantity(item : Item){
+  decrementQuantity(item : Item, index : number){
+    let ind = this.disabledAddButtons.indexOf(index) 
+    ind > -1 ? this.disabledAddButtons.splice(index, 1) : 0;
+    this.disabledRemoveButtons.push(index);
     this.helperService.removeItem(item);
   }
 
