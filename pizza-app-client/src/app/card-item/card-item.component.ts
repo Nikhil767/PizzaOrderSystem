@@ -20,15 +20,17 @@ export class CardItemComponent {
   constructor(private helperService : HelperService) { }
 
   incrementQuantity(item : Item, index : number){
+    debugger;
     let ind = this.disabledRemoveButtons.indexOf(index) 
-    ind > -1 ?  this.disabledRemoveButtons.splice(index, 1) : 0;
+    ind > -1 ?  this.disabledRemoveButtons.splice(ind, 1) : 0;
     this.disabledAddButtons.push(index);
     this.helperService.addItem(item);
   }
 
   decrementQuantity(item : Item, index : number){
+    debugger;
     let ind = this.disabledAddButtons.indexOf(index) 
-    ind > -1 ? this.disabledAddButtons.splice(index, 1) : 0;
+    ind > -1 ? this.disabledAddButtons.splice(ind, 1) : 0;
     this.disabledRemoveButtons.push(index);
     this.helperService.removeItem(item);
   }
