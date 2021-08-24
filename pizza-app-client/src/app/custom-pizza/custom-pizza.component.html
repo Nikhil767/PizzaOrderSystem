@@ -1,30 +1,38 @@
 <div class="container">
   <div *ngIf="!sizeTypeSelected">
-    <h4>Please select pizza Size</h4>
-    <div *ngFor="let cardItem of sizeTypes" class="pizza-card">
-      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true" 
-      (itemSelectEvent)="itemSelected($event)" ></app-card-item>
+    <h4 class="sub-heading">Please select pizza Size</h4>
+    <div class="grid pizza-card">
+      <ng-container *ngFor="let cardItem of sizeTypes">
+        <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
+          (itemSelectEvent)="itemSelected($event)" ></app-card-item>
+      </ng-container>
     </div>
   </div>
   <div *ngIf="sizeTypeSelected && !sauceTypeSelected">
-    <h4>Please select Sauce</h4>
-    <div *ngFor="let cardItem of sauceTypes" class="pizza-card">
-      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
-      (itemSelectEvent)="itemSelected($event)"></app-card-item>
+    <h4 class="sub-heading">Please select Sauce</h4>
+    <div class="grid pizza-card">
+      <ng-container *ngFor="let cardItem of sauceTypes">
+        <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
+        (itemSelectEvent)="itemSelected($event)"></app-card-item>
+      </ng-container>
     </div>
   </div>
   <div *ngIf="sizeTypeSelected && sauceTypeSelected && !chesseTypeSelected">
-    <h4>Please select Chesse</h4>
-    <div *ngFor="let cardItem of chesseTypes" class="pizza-card">
-      <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
-      (itemSelectEvent)="itemSelected($event)"></app-card-item>
+    <h4 class="sub-heading">Please select Chesse</h4>
+    <div class="grid pizza-card">
+      <ng-container *ngFor="let cardItem of chesseTypes" class="pizza-card">
+        <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
+        (itemSelectEvent)="itemSelected($event)"></app-card-item>
+      </ng-container >
     </div>
   </div>
   <div *ngIf="sizeTypeSelected && sauceTypeSelected && chesseTypeSelected && !toppingTypeSelected">
-    <h4>Please select Toppings</h4>
-    <div *ngFor="let cardItem of toppingTypes" class="pizza-card">
+    <h4 class="sub-heading">Please select Toppings</h4>
+    <div class="grid pizza-card">
+    <ng-container *ngFor="let cardItem of toppingTypes" class="pizza-card">
       <app-card-item [type]="cardItem.Type" [cardItem]="cardItem" [showAddToCart]="true"
       (itemSelectEvent)="itemSelected($event)"></app-card-item>
+    </ng-container>
     </div>
   </div>
   <div *ngIf="sizeTypeSelected && sauceTypeSelected && chesseTypeSelected && toppingTypeSelected">

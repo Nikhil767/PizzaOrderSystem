@@ -1,7 +1,13 @@
-.container{
+.container {
     display: flex;
     flex-wrap: wrap;
-}
-.pizza-card{
-    margin: .5em;
-}
+  }
+  .pizza-card {
+    margin: 0.5em;
+  }
+  .grid {
+    display: flex;
+  }
+  .sub-heading {
+    margin-left: 10px;
+  }
